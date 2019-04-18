@@ -508,7 +508,7 @@ export class Service implements IService {
    */
   preload(config: embed.IEmbedConfigurationBase, element?: HTMLElement) {
     var iframeContent = document.createElement("iframe");
-    iframeContent.setAttribute("style", "display:none;");
+    iframeContent.style.display = "none";
     iframeContent.setAttribute("src", config.embedUrl);
     iframeContent.setAttribute("scrolling", "no");
     iframeContent.setAttribute("allowfullscreen", "false");
